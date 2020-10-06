@@ -1,0 +1,481 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 120%;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+}
+
+hr {
+    
+    background-color: black;
+}
+
+iframe {
+    text-align: center;
+    margin: 0.7em;
+}
+
+ul.nav {
+    position: sticky;
+    margin: 2%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    list-style-type: none;
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 120%;
+    z-index: 99;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a.current {
+    background-color: cadetblue;
+}
+
+ul.nav li a.current:hover {
+    background-color: darkslategray;
+}
+
+ul.nav li a:not(.current):hover {
+    background-color: black;
+}
+
+div.references {
+    padding-left: 32px;
+    text-indent: -32px;
+    padding-right: 0%;
+}
+
+footer {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.home {
+    border: 5px solid white;
+    background-color: seagreen;
+ }
+
+
+.main {
+    margin: 2%;
+}
+
+
+.pro h1 {
+    text-align: center;
+}
+
+.rules h1 {
+    text-align: center;
+}
+
+.rules:before {
+    content: ' ';
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url(../images/court.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pro:before {
+    content: ' ';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+}
+       
+.template1 {
+    grid-template-columns: auto;
+    display: inline-grid;
+    grid-template-areas: "intro"
+                         "entertaining"
+                         "history";
+    grid-gap: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.template1 h2 {
+    color: yellow;
+    font-weight: normal;
+}
+
+strong {
+    font-style: italic;
+}
+
+.column1 {
+    border-color: aliceblue;
+    border-style: solid;
+    border-radius: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+
+.entertaining{
+    text-align: center;
+}
+
+.entertaining h2{
+    text-align: left;
+}
+
+.template2 {
+    grid-template-columns: auto;
+    display: grid;
+    grid-template-areas: "goal"
+                         "birdie"
+                         "skills"
+                         "types" 
+                         "scoring" 
+                         "morerules";
+    grid-gap: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#feather {
+    grid-area: feather;
+    grid-gap: 32px;
+    text-align: center;
+}
+
+#plastic {
+    grid-area: plastic;
+    grid-gap: 32px;
+    text-align: center;
+}
+
+#vs {
+    grid-area: vs;
+}
+
+.birdie {
+    grid-area: birdie;
+    grid-template-areas: "vs vs" "feather plastic";
+    grid-template-columns: auto auto;
+    display: grid;
+}
+
+.goal {
+    grid-area: goal;
+}
+
+.goal figure {
+    float: right;
+    clear: both;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.skills {
+    grid-area: skills;
+    grid-template-areas: "f f" "a b" "e e" "c d";
+    grid-template-columns: auto auto;
+    display: grid;
+}
+
+.skills figure {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#a {
+    grid-area: a;
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    grid-area: c;
+}
+
+#d {
+    grid-area: d;
+}
+
+#e {
+    grid-area: e;
+}
+
+.types {
+    grid-area: types;
+    text-align: center;
+}
+
+.types h2, h3 {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.types ul {
+    text-align: left;
+    
+}
+
+.scoring {
+    grid-area: scoring;
+}
+
+.morerules {
+    grid-area: morerules;
+}
+
+.court {
+    text-align: center;
+}
+
+.column2 {
+    border-radius: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 5px orange inset;
+    
+}
+
+
+.rules h2 {
+    font-weight: bold;
+    font-style: oblique;
+    color: darkblue;
+    font-size: 140%;
+    
+}
+
+figcaption {
+    color: red;
+}
+
+
+.template3 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.player {
+    display: inline-block;
+    position: relative;
+}
+
+.player .second {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;  
+}
+
+
+.player:hover .second {
+    display: inline;
+}
+
+.player:hover .first {
+    opacity: 0;
+    
+}
+.star h3 {
+    text-align: center;
+}
+
+.star figure{
+    text-align: center;
+}
+
+.star span {
+    font-size: 120%;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.star {
+    border-bottom: 5px solid blue;
+    padding-top: 1em;
+}
+
+
+
+.rules a {
+    text-decoration: none;
+}
+
+
+.summary {
+    border: 5px ridge;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.resource {
+    border-top: 3px ridge black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.resource h2 {
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.ref_head {
+    font-size: 180%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .main, h2, h3{
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    .pro:before {
+       background-repeat: repeat-y; 
+    }
+    
+    body {
+        font-size: 100%;
+    }
+    
+    ul.nav {
+        position: static;
+    }
+    ul.nav li {
+        float: none;
+    }
+    
+    iframe {
+        width: auto;
+        height: auto;
+    }
+    
+  .birdie {
+    grid-template-areas: "vs" "feather" "plastic";
+    grid-template-columns: auto;
+    display: grid;
+    
+    }
+    
+    
+    .goal figure {
+    float: none;
+    clear: both;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+    }
+    
+    .summary {
+        font-family: Verdana, Geneva, sans-serif;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 100%;
+    }
+    
+    ul.nav {
+        position: static;
+    }
+    ul.nav li {
+        float: none;
+    }
+    
+    iframe {
+        width: auto;
+        height: auto;
+    }
+    
+  .birdie {
+    grid-template-areas: "vs" "feather" "plastic";
+    grid-template-columns: auto;
+    display: grid;
+    
+    }
+      
+    .goal figure {
+    float: none;
+    clear: both;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+}
+     
+}
+
+
+@media screen and (max-width: 1000px) {
+    .birdie {
+    grid-template-areas: "vs" "feather" "plastic";
+    grid-template-columns: auto;
+    display: grid;
+    
+    }   
+}
+
+@media screen and (max-width: 1000px) {
+    .skills {
+        grid-area: skills;
+        grid-template-areas: "f" "a" "b" "c" "d" "e";
+        grid-template-columns: auto;
+        display: grid;
+    }
+        
+}
+
+
+
+@media print {
+    .main, h2, h3{
+        font-family: "Times New Roman", Times, serif;
+    }
+    .nav {
+        display: none;
+    }
+    h1 {
+        font-family: "Times New Roman", Times, serif;
+    }
+}
+
